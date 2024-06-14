@@ -22,7 +22,7 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="bg-[#FCFFF0] px-20 py-5">
+    <header className="bg-beige px-20 py-5">
       <nav className="flex">
         <Link href={navLinks[0].href}>
           <Logo />
