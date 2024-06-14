@@ -2,9 +2,9 @@ import Logo from "./logo";
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <Logo />
       <h1>Header</h1>
-    </div>
+    </header>
   );
 }
