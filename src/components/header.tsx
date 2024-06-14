@@ -34,8 +34,10 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <Link className="ml-auto" href={navLinks[1].href}>
-          <button>Connect Wallet</button>
+        <Link className="ml-auto my-auto" href={navLinks[1].href}>
+          <button className="bg-fluorescent-green border-green text-darkgreen w-[200px] h-[50px] rounded-xl border-[1px]  ">
+            Connect Wallet
+          </button>
         </Link>
       </nav>
     </header>

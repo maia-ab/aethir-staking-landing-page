@@ -7,13 +7,17 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      'beige': '#FCFFF0',
-      'black-green': '#4B5F30',
-      'darkgreen': '#4B5F30',
-      'green': '#C0E44C',
-      'lightgreen': '#DBF48C',
+    extend: {
+      colors: {
+        'beige': '#FCFFF0',
+        'black-green': '#4B5F30',
+        'darkgreen': '#4B5F30',
+        'green': '#C0E44C',
+        'lightgreen': '#DBF48C',
+        'fluorescent-green': '#D7FE51'
+      },
     }
+
   },
   plugins: [],
 };
