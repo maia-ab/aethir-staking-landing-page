@@ -16,6 +16,10 @@ const config: Config = {
         'lightgreen': '#DBF48C',
         'fluorescent-green': '#D7FE51'
       },
+      screens: {
+        'xs': '320px',
+        // => @media (min-width: 640px) { ... }
+      }
     }
 
   },

@@ -1,4 +1,5 @@
 import Hero from "@/components/hero";
+import TextPanel from "@/components/text-panel";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         text="Aethir Staking"
         subtext="Brief explanation, stake to recieve passive income etc."
       />
+      <TextPanel title="Total Value Locked" text="300.00 ATH" />
     </main>
   );
 }
