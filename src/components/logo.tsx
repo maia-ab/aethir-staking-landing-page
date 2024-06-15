@@ -10,7 +10,7 @@ export default function Logo() {
         width={60}
         height={60}
       />
-      <h1 className="mx-1 font-bold">Aethir</h1>
+      <h2 className="mx-1 font-medium" >Aethir</h2>
     </div>
   );
 }

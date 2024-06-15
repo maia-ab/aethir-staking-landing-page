@@ -22,14 +22,14 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="bg-beige px-20 py-5">
+    <header className="px-20 py-5">
       <nav className="flex">
         <Link href={navLinks[0].href}>
           <Logo />
         </Link>
-        <ul className="flex justify-items-center gap-3 w-[200px] mx-8 my-5 text-lg">
+        <ul className="flex justify-items-center gap-20 w-[200px] mx-20 my-5 text-lg">
           {navLinks.slice(2).map((link) => (
-            <li key={link.href}>
+            <li className="" key={link.href}>
               <Link href={link.href}>{link.label}</Link>
             </li>
           ))}
