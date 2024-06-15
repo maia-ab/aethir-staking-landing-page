@@ -1,3 +1,4 @@
+import SupportPanel from "@/components/support-panel";
 import Hero from "@/components/hero";
 import TextPanel from "@/components/text-panel";
 
@@ -11,6 +12,10 @@ export default function Home() {
         subtext="Brief explanation, stake to recieve passive income etc."
       />
       <TextPanel title="Total Value Locked" text="300.00 ATH" />
+      <SupportPanel
+        text="Still not sure? We got you!"
+        buttonText="Get Support"
+      />
     </main>
   );
 }
