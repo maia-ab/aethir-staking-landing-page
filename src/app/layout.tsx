@@ -22,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.className} bg-gradient-to-b from-white to-lightgreen via-beige h-screen`}
+        className={`${rubik.className} bg-gradient-to-b from-white to-lightgreen via-beige `}
       >
-        <Header />
+      <Header />
         {children}
         <Footer />
       </body>

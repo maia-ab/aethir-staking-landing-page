@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         'beige': '#FCFFF0',
         'black-green': '#4B5F30',
-        'darkgreen': '#4B5F30',
+        'darkgreen': '#496522',
         'green': '#C0E44C',
         'lightgreen': '#DBF48C',
         'fluorescent-green': '#D7FE51'

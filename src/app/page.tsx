@@ -3,7 +3,7 @@ import TextPanel from "@/components/text-panel";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="mx-20 bg-red-500">
       <Hero
         imageUrl="/hero-image.png"
         imageAlt="Aethir hero image"

@@ -12,7 +12,7 @@ function Hero({ imageUrl, imageAlt, text, subtext }: HeroProps) {
     <div className="relative">
       <div>
         <Image
-          className="rounded-md p-2 mx-auto"
+          className="rounded-md m-auto"
           src={imageUrl}
           alt={imageAlt}
           width={1780}

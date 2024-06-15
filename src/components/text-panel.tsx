@@ -5,9 +5,9 @@ type TextPanelProps = {
 
 function TextPanel({ title, text }: TextPanelProps) {
   return (
-    <div className="bg-green w-[92%] mx-auto">
-      <h2>{title}</h2>
-      <p>{text}</p>
+    <div className="flex flex-col justify-center items-center p-4 my-16 mx-auto max-w-[1780px] h-[300px] rounded-xl text-darkgreen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-beige to-green">
+      <h2 className="text-4xl font-thin mb-6">{title}</h2>
+      <p className="text-8xl">{text}</p>
     </div>
   );
 }
