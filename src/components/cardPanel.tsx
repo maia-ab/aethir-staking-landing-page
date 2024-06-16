@@ -1,11 +1,8 @@
-
 import Card from "./card";
 
 function CardPanel() {
-
-
   return (
-    <div className="bg-beige flex place-content-around px-30 py-8 rounded-xl">
+    <div className="bg-beige  px-30 py-8 rounded-xl flex flex-col items-center md:flex-row place-content-around flex-wrap">
       <Card
         amount={100.0}
         heading="Stake to Gaming Ecosystem"

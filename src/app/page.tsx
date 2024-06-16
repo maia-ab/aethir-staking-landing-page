@@ -5,7 +5,7 @@ import CardPanel from "@/components/cardPanel";
 
 export default function Home() {
   return (
-    <main className="mx-20">
+    <main className="md:mx-20">
       <Hero
         imageUrl="/hero-image.png"
         imageAlt="Aethir hero image"

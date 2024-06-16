@@ -20,7 +20,7 @@ function Card({ amount, heading, description, buttonLink}: CardProps) {
   };
   return (
     <div
-      className={`p-10 rounded-xl space-y-6 ${
+      className={`w-[400px] p-10 rounded-xl space-y-6 ${
         isSelected ? "bg-green" : "hover:bg-[#F8FFCC]"
       } ${isSelected ? "hover:bg-green" : "bg-beige"}`}
       onClick={handleClick}
