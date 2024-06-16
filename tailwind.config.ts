@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         'beige': '#FCFFF0',
-        'black-green': '#4B5F30',
+        'black-green': '#1C2925',
         'darkgreen': '#496522',
         'green': '#C0E44C',
         'lightgreen': '#DBF48C',

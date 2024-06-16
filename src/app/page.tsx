@@ -1,6 +1,7 @@
 import SupportPanel from "@/components/support-panel";
 import Hero from "@/components/hero";
 import TextPanel from "@/components/text-panel";
+import CardPanel from "@/components/card-panel";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         text="Still not sure? We got you!"
         buttonText="Get Support"
       />
+      <CardPanel />
     </main>
   );
 }

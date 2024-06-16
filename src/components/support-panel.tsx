@@ -21,3 +21,4 @@ function SupportPanel({ text, buttonText }: SupportPanelProps) {
 }
 
 export default SupportPanel;
+
