@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Button from "./button";
 import PricingGrid from "./pricingGrid";
 import { useState } from "react";
@@ -8,18 +9,20 @@ type CardProps = {
   amount: number;
   heading: string;
   description: string;
+  buttonLink?: string;
 };
 
-
-function Card({ amount, heading, description }: CardProps) {
+function Card({ amount, heading, description, buttonLink}: CardProps) {
   const [isSelected, setIsSelected] = useState(false);
-  
+
   const handleClick = () => {
     setIsSelected(!isSelected);
   };
   return (
     <div
-      className={`p-10 rounded-xl space-y-6 ${isSelected ? "bg-green" : "hover:bg-[#F8FFCC]"} ${isSelected ? "hover:bg-green" : "bg-beige"}`}
+      className={`p-10 rounded-xl space-y-6 ${
+        isSelected ? "bg-green" : "hover:bg-[#F8FFCC]"
+      } ${isSelected ? "hover:bg-green" : "bg-beige"}`}
       onClick={handleClick}
     >
       <h2 className="text-darkgreen text-6xl">
@@ -34,18 +37,19 @@ function Card({ amount, heading, description }: CardProps) {
         prices={[30, 60, 90, 180, 360]}
         percenteges={[30, 30, 30, 30, 30]}
       />
-      <div className="flex justify-center">
-        <Button
-          style={{
-            backgroundColor: `${isSelected ? "#496522" : "#C0E44C"}`,
-            color: `${isSelected ? "white" : "#496522"}`,
-            fontSize: "30px",
-            borderRadius: "10px",
-            padding: "10px 115px",
-          }}
-        >
-          Explore
-        </Button>
+      <div className="flex justify-center ">
+        <Link href={buttonLink || "/"}>
+          <Button
+            className={`py-4 px-20 rounded-xl
+            ${
+              isSelected
+                ? "bg-darkgreen hover:bg-[#5A772C] text-white"
+                : "bg-green hover:bg-[#CEEA5C] text-darkgreen"
+            }`}
+          >
+            Explore
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 type ButtonProps = {
-  style: React.CSSProperties;
+  className: string;
   children: React.ReactNode;
 };
 
-function Button({style, children }: ButtonProps) {
-  return <button style={style}>{children}</button>;
+function Button({className, children }: ButtonProps) {
+  return <button className={className}>{children}</button>;
 }
 
 export default Button;
