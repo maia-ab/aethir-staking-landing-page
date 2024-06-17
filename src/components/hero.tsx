@@ -18,12 +18,8 @@ function Hero({ imageUrl, imageAlt, text, subtext }: HeroProps) {
         height={1780}
       />
       <div className="flex flex-col justify-center items-center absolute inset-0">
-        <h1 className="text-white text-6xl  md:text-7xl lg:text-8xl">
-          {text}
-        </h1>
-        <p className="text-white text-lg md:text-2xl font-light">
-          {subtext}
-        </p>
+        <h1 className="text-white text-6xl  md:text-7xl lg:text-8xl">{text}</h1>
+        <p className="text-white text-lg md:text-2xl font-light">{subtext}</p>
       </div>
     </div>
   );
