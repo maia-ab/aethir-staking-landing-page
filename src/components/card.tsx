@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Button from "./button";
 import PricingGrid from "./pricingGrid";
 import { useState } from "react";
 
@@ -39,7 +38,7 @@ function Card({ amount, heading, description, buttonLink }: CardProps) {
       />
       <div className="flex justify-center ">
         <Link href={buttonLink || "/"}>
-          <Button
+          <button
             className={`py-4 px-20 rounded-xl
             ${
               isSelected
@@ -48,7 +47,7 @@ function Card({ amount, heading, description, buttonLink }: CardProps) {
             }`}
           >
             Explore
-          </Button>
+          </button>
         </Link>
       </div>
     </div>
