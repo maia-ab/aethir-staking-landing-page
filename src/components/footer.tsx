@@ -3,9 +3,9 @@ import ButtonGrid from "./buttonGrid";
 
 function Footer() {
   return (
-    <footer className="bg-black-green text-white px-10 py-20">
+    <footer className="bg-black-green text-white px-12 py-20 0">
       <div className="flex flex-col items-center md:flex-row justify-between">
-        <div className="">
+        <div>
           <h2 className="text-2xl font-semibold my-2">Header</h2>
           <p className=" max-h-50 max-w-[400px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -14,7 +14,7 @@ function Footer() {
             repellendus distinctio vel dolor.
           </p>
         </div>
-        <div className="">
+        <div>
           <ButtonGrid />
         </div>
       </div>

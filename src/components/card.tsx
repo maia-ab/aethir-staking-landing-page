@@ -12,7 +12,7 @@ type CardProps = {
   buttonLink?: string;
 };
 
-function Card({ amount, heading, description, buttonLink}: CardProps) {
+function Card({ amount, heading, description, buttonLink }: CardProps) {
   const [isSelected, setIsSelected] = useState(false);
 
   const handleClick = () => {
@@ -21,8 +21,8 @@ function Card({ amount, heading, description, buttonLink}: CardProps) {
   return (
     <div
       className={`w-[400px] p-10 rounded-xl space-y-6 ${
-        isSelected ? "bg-green" : "hover:bg-[#F8FFCC]"
-      } ${isSelected ? "hover:bg-green" : "bg-beige"}`}
+        isSelected ? "bg-lightgreen" : "hover:bg-[#F8FFCC]"
+      } ${isSelected ? "hover:bg-lightgreen" : "bg-beige"}`}
       onClick={handleClick}
     >
       <h2 className="text-darkgreen text-6xl">
